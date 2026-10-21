@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.widge.cctv.tuya'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.widge.cctv.tuya"
+        minSdk 21
+        targetSdk 34
+        versionCode 3
+        versionName "3.0-SIMPLE-VideoView-Bardi-HanRiver"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+}
